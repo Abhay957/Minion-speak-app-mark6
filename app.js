@@ -1,8 +1,8 @@
 var btnTranslate = document.querySelector("#btn-translate");
 var inputText = document.querySelector("#input-txt");
-var outputDiv = document.querySelector("output");
+var outputDiv = document.querySelector("#output");
 
-var serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+var serverUrl = "https://api.funtranslations.com/translate/minion.json";
 
 function constructUrl(text){
     return serverUrl +"?" + "text=" + text;
@@ -21,6 +21,6 @@ function callHeader()
         }     
     )
         
-}
+};
 
 btnTranslate.addEventListener("click", callHeader);
