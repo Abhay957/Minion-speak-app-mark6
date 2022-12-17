@@ -8,6 +8,11 @@ function constructUrl(text) {
     return serverUrl + "?" + "text=" + text;
 }
 
+function errorHandler(error){
+    console.log("error occured",error);
+    alert("Error occured there's something wrong with the server.")
+}
+
 function callHeader() {
     const textInput = inputText.value;
 
@@ -18,7 +23,7 @@ function callHeader() {
             var translatedText = json.contents.translated;
             outputDiv.innerText = translatedText;
         })
-
+    .catch(errorHandler);
 };
 
 btnTranslate.addEventListener("click", callHeader);
