@@ -4,23 +4,21 @@ var outputDiv = document.querySelector("#output");
 
 var serverUrl = "https://api.funtranslations.com/translate/minion.json";
 
-function constructUrl(text){
-    return serverUrl +"?" + "text=" + text;
+function constructUrl(text) {
+    return serverUrl + "?" + "text=" + text;
 }
 
-function callHeader()
-{
-    const textInput = inputText.value;  
+function callHeader() {
+    const textInput = inputText.value;
 
     fetch(constructUrl(textInput))
-    .then(response => response.json())
-    .then(json => {
+        .then(response => response.json())
+        .then(json => {
 
             var translatedText = json.contents.translated;
             outputDiv.innerText = translatedText;
-        }     
-    )
-        
+        })
+
 };
 
 btnTranslate.addEventListener("click", callHeader);

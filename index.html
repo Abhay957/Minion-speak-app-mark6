@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana talk</title>
     <style>
-        #input-txt{
-            width : 80%;
+        #input-txt {
+            width: 50%;
             display: block;
             margin: 1rem;
             height: 15vh;
             padding: 1rem;
+            margin: auto;
+            margin-top: 3rem;
         }
-        #btn-translate{
+
+        #banana-talk {
+            background-color: #fef08a;
+            padding: 2rem;
+            text-align: center;
+            margin-block-start: -0.4em;
+            margin-inline-start: -0.4em;
+            margin-inline-end: -0.8em;
+            display: block;
+        }
+
+        #btn-translate {
             margin: 1rem;
             font-weight: bold;
+            margin-left: 20rem;
+            border: none;
+            background-color: #8ad0fe;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
         }
-        #output{
-            border: 1px solid black;
+
+        #output {
+            border: 1px solid;
             height: 15vh;
             margin: 1rem;
-            width: 80%;
+            width: 50%;
             padding: 1rem;
+            margin-left: 20rem;
+        }
+
+        #footer {
+            text-align: center;
         }
     </style>
-</head>
-<body>
-    <h1>Banana talk</h1>
-    <textarea id="input-txt" placeholder="Put your text in english here and we will convert this to Banana!"></textarea>
 
-    <button id="btn-translate">Translate</button>
-    <div>Translation will come here 👇</div>
+</head>
+
+<body>
+    <nav>
+        <h1 id="banana-talk">Banana talk</h1>
+    </nav>
+
+
+    <textarea id="input-txt" placeholder="Put your text in english here and we will convert this to 🍌!"></textarea>
+
+    <button id="btn-translate">Translate to banana</button>
+    <div style="margin-left: 20rem;">Translation will come here 👇</div>
     <div id="output"></div>
+    <footer id="footer">
+        <img src="images/minions.png">
+    </footer>
     <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>
