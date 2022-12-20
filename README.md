@@ -10,6 +10,6 @@ This project was made as part of level zero of neogcamp.
 
 Used minion funtranslation api for the web app.
 
-<h2>CLI app look:</h2>
+<h2>App look:</h2>
 
 <img src="images/mark6view.png" >
